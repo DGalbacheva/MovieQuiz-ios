@@ -110,10 +110,10 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         imageView.layer.borderColor = UIColor.clear.cgColor
         if currentQuestionIndex == questionsAmount - 1 {
             statisticService.store(correct: correctAnswers, total: questionsAmount)
-            let result = "Ваш результать: \(correctAnswers) / \(questionsAmount)\n"
+            let result = "Ваш результат: \(correctAnswers) / \(questionsAmount)\n"
             let gameCount = "Количество сыграных квизов: \(statisticService.gamesCount)\n"
             let record = "Рекорд: \(statisticService.bestGame.correct) / \(statisticService.bestGame.total) (\(statisticService.bestGame.date.dateTimeString))\n"
-            let accuracy = "Средняя точность: \(String(format: "%0.2f%%", statisticService.totalAccuracy * 100))\n"
+            let accuracy = "Средняя точность: \(String(format: "%0.2f%%", statisticService.totalAccuracy * 100))"
             
             let resultMessage = result + gameCount + record + accuracy
             
