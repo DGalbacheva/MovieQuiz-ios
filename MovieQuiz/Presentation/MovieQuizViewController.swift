@@ -22,10 +22,9 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
         super.viewDidLoad()
         
         questionFactory = QuestionFactory(moviesLoader: MoviesLoader(), delegate: self)
-        //questionFactory.setup(delegate: self)
         statisticService = StatisticServiceImplementation()
         alertPresenter = AlertPresenter(delegte: self)
-       // self.questionFactory = questionFactory
+       
         
         showLoadingIndicator()
         questionFactory?.loadData()
@@ -85,12 +84,13 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate, 
     
     // метод, который показывает  всем состояниям, которые есть у индикатора
     private func showLoadingIndicator() {
-        activityIndicator.isHidden = false
+        activityIndicator.isHidden = true
         activityIndicator.startAnimating()
     }
     
     private func hideLoadingIndicator() {
-        activityIndicator.isHidden = true
+        activityIndicator.isHidden = false
+       // activityIndicator.stopAnimating()
     }
     
     private func showNetworkError(message: String) {
