@@ -114,7 +114,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iuQ-za-xGt">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iuQ-za-xGt">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -134,7 +134,9 @@
                         <outlet property="activityIndicator" destination="iuQ-za-xGt" id="LNy-7a-k7Z"/>
                         <outlet property="counterLabel" destination="eJN-qa-7eO" id="zRs-V8-hxq"/>
                         <outlet property="imageView" destination="yuR-vS-DDZ" id="15b-Ib-9HG"/>
+                        <outlet property="noButton" destination="6bD-d7-qFJ" id="fvI-70-LCb"/>
                         <outlet property="textLabel" destination="C18-WY-T0O" id="jp9-t0-E6x"/>
+                        <outlet property="yesButton" destination="oV7-cT-iBK" id="kdH-p7-gMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

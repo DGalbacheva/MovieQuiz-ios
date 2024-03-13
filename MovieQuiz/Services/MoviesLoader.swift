@@ -37,7 +37,6 @@ struct MoviesLoader: MoviesLoading {
             case .failure(let error):
                 handler(Result.failure(error))
             }
-            return
         }
     }
 }
