@@ -9,6 +9,18 @@ import XCTest
 @testable import MovieQuiz
 
 final class MovieQuizViewControllerMock: MovieQuizViewControllerProtocol {
+    func didFailToLoadImage(alert: UIAlertController) {
+        
+    }
+    
+    func show(alert: UIAlertController) {
+        
+    }
+    
+    func enableButtons() {
+        
+    }
+    
     func show(quiz step: QuizStepViewModel) {
         
     }
